@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" whenNoDataType="BlankPage" columnWidth="842" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" isTitleNewPage="true" isSummaryWithPageHeaderAndFooter="true" isFloatColumnFooter="true" whenResourceMissingType="Empty" uuid="a2df0ca8-c14b-460f-827a-4d44b8e18a6e">
+	<property name="ireport.zoom" value="1.6963904734899395"/>
+	<property name="ireport.x" value="62"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[select * from mhs]]>
+	</queryString>
+	<field name="nim" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_mhs" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="alamat_mhs" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="notlp_mhs" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_jurusan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="25" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="b6ee3652-41a6-4c92-89fa-62c944a9d4d1" x="34" y="2" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[sadasd]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="20"/>
+		<band height="113" splitType="Stretch">
+			<textField>
+				<reportElement uuid="07dbda56-a6c4-49ef-8e10-6f79b0af670d" positionType="Float" stretchType="RelativeToTallestObject" mode="Opaque" x="53" y="0" width="50" height="20" backcolor="#666600"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nim}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
